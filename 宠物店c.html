@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<style type="text/css">
+			.mynav>li{margin-bottom: 5px;background: #d9edf7;}
+			.page-header>div{padding: 20px;}
+			.page-header>div>div{padding: 10px;border: 1px solid #e1e1e1;}
+			.page-header>div>div>img{margin-bottom: 20px;}
+			.page-header>div>div>div{margin-top: 20px;}
+			.panel-heading{background: #d9edf7 !important;}
+			.panel-heading a{text-decoration: none;}
+			.tab-content>div>ul>li>a{text-decoration: none;}
+			.usertab>li>a:hover{background: white;border: none;}
+			.usertab>li{box-sizing: border-box;border-bottom: 1px solid darkgray;}
+			.usertxt{margin-top: 50px;}
+			.lis>dt{margin-top: 18px;}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" style="padding: 0;padding-top: 50px;">
+			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" style="border-radius: 0;">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">宠物用户店</a>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a data-toggle="modal" data-target="#mymodal">登录</a></li>
+			        <li><a href="#" data-toggle="modal" data-target="#registermodal">[注册]</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>购物车(0)</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-user"></span>个人中心</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-heart"></span>收藏本站</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>帮助</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			<div class="container">
+				<img src="img/logo.png" class="img-responsive"/>
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <a class="navbar-brand" href="#">E宠商城</a>
+				      <ul class="nav navbar-nav">
+				      	<li><a href=""><strong>首页</strong></a></li>
+			      	  </ul>
+				    </div>
+				
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="navbar-collapse">
+				      <ul class="nav navbar-nav">
+				        <li><a href="#">新品上市</a></li>
+				        <li class="dropdown">
+				        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">优惠折扣<span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+				        		<li><a href="">111</a></li>
+				        		<li><a href="">222</a></li>
+				        		<li><a href="">333</a></li>
+				        	</ul>
+				        </li>
+				        <li>
+				        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">宠物新闻<span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+				        		<li><a href="">111</a></li>
+				        		<li><a href="">222</a></li>
+				        		<li><a href="">333</a></li>
+				        	</ul>
+				        </li>
+				        <li>
+				        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">品牌街<span class="caret"></span></a>
+				        	<ul class="dropdown-menu">
+				        		<li><a href="">111</a></li>
+				        		<li><a href="">222</a></li>
+				        		<li><a href="">333</a></li>
+				        	</ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="img/banner1.png" alt="...">
+				    </div>
+				    <div class="item">
+				      <img src="img/banner2.png" alt="...">
+				    </div>
+				    <div class="item">
+				      <img src="img/banner3.png" alt="...">
+				    </div>
+				  </div>
+				
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="page-header">
+						  <h2>商品分类</h2>
+						</div>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingOne">
+						      <h4 class="panel-title">
+						        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          	宠物食品
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="panel-body list-group">
+						      	<li class="list-group-item">猫粮</li>
+						      	<li class="list-group-item">狗粮</li>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingTwo">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          	宠物服饰
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="panel-body list-group">
+						      	<li class="list-group-item">衣服</li>
+						      	<li class="list-group-item">裤子</li>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingThree">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          	宠物玩具
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						      <div class="panel-body list-group">
+						      	<li class="list-group-item">玩具球</li>
+						      	<li class="list-group-item">玩具骨头</li>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingFour">
+						      <h4 class="panel-title">
+						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+						          	宠物小窝
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+						      <div class="panel-body list-group">
+						      	<li class="list-group-item">豪华小窝</li>
+						      	<li class="list-group-item">温馨小窝</li>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-6 col-sm-6">
+						<div class="page-header">
+						  <h2>天天惊喜<small>限量尝鲜，超低折扣</small></h2>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						  	<div>
+						  		<img src="img/pic1.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						  	<div>
+						  		<img src="img/pic2.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						  	<div>
+						  		<img src="img/pic3.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+						  	<div>
+						  		<img src="img/pic4.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						  	<div>
+						  		<img src="img/pic5.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						  	<div>
+						  		<img src="img/pic3.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						  	<div>
+						  		<img src="img/pic2.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						  	<div>
+						  		<img src="img/pic1.png" class="img-responsive center-block"/>
+						  		<span><small>尝鲜价：</small><strong>￥60.00</strong><small><del>￥69.00</del></small></span>
+						  		<div class="btn btn-block btn-success">马上抢购</div>
+						  	</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="page-header">
+						  <h2>新闻专栏</h2>
+						</div>
+						<div>
+						  <!-- Nav tabs -->
+						  <ul class="nav nav-tabs" role="tablist">
+						    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">本站新闻</a></li>
+						    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">宠物新闻</a></li>
+						    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">玩具</a></li>
+						    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">药品</a></li>
+						  </ul>
+						
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="home">
+						    	<ul class="list-group">
+						    		<li class="list-group-item"><a href="">E宠2周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠2周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠2周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠2周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠2周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠2周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠2周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    	</ul>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="profile">
+						    	<ul class="list-group">
+						    		<li class="list-group-item"><a href="">E宠3周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠3周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠3周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠3周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠3周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    	</ul>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="messages">
+						    	<ul class="list-group">
+						    		<li class="list-group-item"><a href="">E宠4周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠4周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠4周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    	</ul>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="settings">
+						    	<ul class="list-group">
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    		<li class="list-group-item"><a href="">E宠5周年，新春大优惠活动</a><span class="badge">2015-3-10</span></li>
+						    	</ul>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="page-header">
+						  <h2>留言板</small></h2>
+						</div>
+						<div>
+							<dl class="dl-horizontal lis clearfix">
+								<div class="clearfix" style="opacity: 0;"><dt>haha</dt></div>
+								<div class="clearfix pull-left col-xs-3">
+									<dt class="pull-left clearfix"><span class="pull-left">用户名</span></dt>
+								</div>
+								<div class="clearfix pull-left col-xs-9">
+									<dd class="" style="margin-left: 0;"><strong>留言</strong></dd>
+								</div>
+								<hr />
+								
+								<div class="clearfix pull-left col-xs-3">
+									<dd class="pull-left clearfix" style="margin: 0;"><span class="pull-left">张三</span></dd>
+								</div>
+								<div class="clearfix pull-left col-xs-9">
+									<dd class="" style="margin-left: 0;">今天天气很好</dd>
+								</div>
+								<div class="nav col-xs-12">
+									<div class="nav-divider"></div>
+								</div>
+								<div class="clearfix pull-left col-xs-3">
+									<dd class="pull-left clearfix" style="margin: 0;"><span class="pull-left">李四</span></dd>
+								</div>
+								<div class="clearfix pull-left col-xs-9">
+									<dd class="" style="margin-left: 0;">今天去打球</dd>
+								</div>
+								<div class="nav col-xs-12">
+									<div class="nav-divider"></div>
+								</div>
+							</dl>
+							<textarea class="form-control usertxt"></textarea>
+							<button class="btn btn-primary pull-right" style="margin-top: 20px;">提交留言</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img src="img/logo2.png" class="img-responsive"/>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<h2>400-600-6200</h2>
+						<h3>客服电话(免费长途)</h3>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-xs-3">
+							<h3>关于</h3>
+							<p><a href="">关于我们</a></p>
+							<p><a href="">广告合作</a></p>
+							<p><a href="">友情链接</a></p>
+							<p><a href="">招聘</a></p>
+						</div>
+						<div class="col-xs-3">
+							<h3>联系方式</h3>
+							<p><a href="">新浪微博</a></p>
+							<p><a href="">电子邮件</a></p>
+						</div>
+						<div class="col-xs-3">
+							<h3>旗下网站</h3>
+							<p><a href="">Laravel中文网</a></p>
+							<p><a href="">Ghost中国</a></p>
+						</div>
+						<div class="col-xs-3">
+							<h3>赞助商</h3>
+							<p><a href="">UCloud</a></p>
+							<p><a href="">又拍云</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" tabindex="-1" id="mymodal" role="dialog">
+			<!--modal-sm 模态尺寸-->
+			  <div class="modal-dialog modal-sm" role="document">
+			    <div class="modal-content">
+			    		<!--modal头部-->
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">用户登录</h4>
+			      </div>
+			     	 <!--modal-body-->
+			      <div class="modal-body">
+						 <form>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">用户名</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">密码</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						</form>
+			      </div>
+			      <!--modal-footer-->
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">登录</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<div class="modal fade" tabindex="-1" id="registermodal" role="dialog">
+			<!--modal-sm 模态尺寸-->
+			  <div class="modal-dialog modal-sm" role="document">
+			    <div class="modal-content">
+			    		<!--modal头部-->
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">用户登录</h4>
+			      </div>
+			     	 <!--modal-body-->
+			      <div class="modal-body">
+						 <form>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">用户名</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">密码</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						</form>
+			      </div>
+			      <!--modal-footer-->
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">注册</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		</div>
+	</body>
+	<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</html>
